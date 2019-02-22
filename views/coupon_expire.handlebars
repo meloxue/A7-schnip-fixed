@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Coupon Main Sort</title>
+	<title>Coupons page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -19,10 +19,9 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/introHCI.js"></script>
 
-	<script src="/js/a5.js"></script>
-	<script src="/js/coupon.js"></script>
+	<script src="js/a5.js"></script>
+	<script src="js/coupon.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	
 </head>
@@ -36,6 +35,11 @@
 			<a class="link" href="#" ><h3>{{product}}</h3></a>
 			<p>{{brand}}</p>
 			<p>{{Deal}}</p>
+			<p>{{Saved}}</p>
+			<p>{{productId}}</p>
+			<img alt="" src="images/sheart_unpressed.jpg" 
+            style="height: 48px; width: 48px" id="heart" onclick="heartChange();"  />
+
 		</div>
 		<hr>
 		{{/each}}
